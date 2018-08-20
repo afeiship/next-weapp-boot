@@ -1,7 +1,7 @@
 # page:
 
 ## usage:
-1. $watch
+1. $observe
 ```js
 nx.Component({
   properties: {
@@ -17,7 +17,7 @@ nx.Component({
       type: Number,
       value: 100
     },
-    $watch: {
+    $observe: {
       type: Object,
       value: {
         visible: {
@@ -25,8 +25,6 @@ nx.Component({
             return this._value || false;
           },
           set(inValue) {
-            console.log(this);
-            console.log('set!!');
             this.testMethod();
             this._value = inValue;
           }
