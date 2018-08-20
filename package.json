@@ -1,0 +1,12 @@
+{
+  "name": "next-weapp-boot",
+  "version": "0.0.1",
+  "description": "Weapp enhanced boot",
+  "homepage": "https://github.com/afeiship/next-weapp-boot",
+  "author": {
+    "name": "afei",
+    "email": "1290657123@qq.com"
+  },
+  "main": "index.js",
+  "license": "MIT"
+}
