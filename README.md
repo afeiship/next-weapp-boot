@@ -9,4 +9,8 @@ import 'next-weapp-boot';
 nx.App(/*Your options*/)
 nx.Page(/*Your options*/)
 nx.Component(/*Your options*/)
+
+// app && globalData
+nx.wxAppInstance
+nx.wxGlobalData
 ```
