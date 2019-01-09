@@ -1,7 +1,9 @@
 # page:
 
 ## usage:
-1. $observe
+> Observe properies:
+
+- $observe
 ```js
 nx.Component({
   properties: {
@@ -13,15 +15,16 @@ nx.Component({
       type: Number,
       value: 100
     },
-    $observe: {
-      visible: {
-        get() {
-          return this._value || false;
-        },
-        set(inValue) {
-          this.onVisible(inValue);
-          this._value = inValue;
-        }
+    
+  },
+  observe: {
+    visible: {
+      get() {
+        return this._value || false;
+      },
+      set(inValue) {
+        this.onVisible(inValue);
+        this._value = inValue;
       }
     }
   },
