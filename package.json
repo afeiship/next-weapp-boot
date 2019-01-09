@@ -8,5 +8,8 @@
     "email": "1290657123@qq.com"
   },
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "next-weapp-redux-base": "github:afeiship/next-weapp-redux-base"
+  }
 }
