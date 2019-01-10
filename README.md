@@ -1,6 +1,10 @@
 # next-weapp-boot
 > Weapp enhanced boot
 
+## detail useage:
+- [nx.App](./docs/app.md)
+
+
 # install:
 ```js
 import 'next-weapp-boot';
