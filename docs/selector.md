@@ -12,5 +12,10 @@
 ```
 
 ```js
-nx.$('user1')
+// get user1 instance
+const user1 = nx.$('user1')
+
+// call user1's method?(NOT RECOMMEND)
+user1.method1()
 ```
+
