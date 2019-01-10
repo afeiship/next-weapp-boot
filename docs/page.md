@@ -2,7 +2,9 @@
 > 对 Page 构造方法的扩展，包含所有的 Page 构造器的功能.
 
 ## feature:
-- methods/lifetimes 分开写
+- `methods/lifetimes` 分开写
+- `methods/lifetimes` 方法会 `merge`，所以，并不能重名
+- `lifetimes` 里的方法，不需要加 `on`
 
 ## usage:
 ```js
