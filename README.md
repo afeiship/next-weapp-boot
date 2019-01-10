@@ -5,6 +5,7 @@
 - [nx.App](./docs/app.md)
 - [nx.Page](./docs/page.md)
 - [nx.Component](./docs/component.md)
+- [nx.Behavior](./docs/behavior.md)
 - [nx.$](./docs/selector.md)
 
 
@@ -16,8 +17,12 @@ import 'next-weapp-boot';
 nx.App(/*Your options*/)
 nx.Page(/*Your options*/)
 nx.Component(/*Your options*/)
+nx.Behavior(/*Your options*/)
 
-// app && globalData
-nx.wxAppInstance
-nx.wxGlobalData
+// app MEET redux
+nx.$app
+nx.$memory
+nx.$local
+nx.$global
+nx.$('YOUR_COMPONENT')
 ```
