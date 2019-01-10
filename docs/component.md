@@ -11,25 +11,41 @@
 - https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/component.html
 
 ~~~
-
 组件的对外属性，是属性名到属性设置的映射表，属性设置中可包含三个字段， type 表示属性类型、 value 表示属性初始值、 observer 表示属性值被更改时的响应函数
 ~~~
 
 ```js
 nx.Component({
   properties: {
-    firstName: {
+    className: {
       type: String,
-      value: 'fei'
+      value: ''
     },
-    lastName: {
-      type: String,
-      value: 'zheng'
+    zIndex: {
+      type: Number,
+      value: 100
+    },
+    
+  },
+  observe: {
+    visible: {
+      get() {
+        return this._value || false;
+      },
+      set(inValue) {
+        this.onVisible(inValue);
+        this._value = inValue;
+      }
     }
   },
-  observe:{
-    get: function(){
-      return this.firstName + this.lastName;
+  methods: {
+    onVisible(inValue) {
+      if (inValue) {
+        this.setData({zIndex: 1000})
+      } else {
+        this.setData({zIndex: -1})
+      }
+      console.log('visible changed', inValue);
     }
   }
 });

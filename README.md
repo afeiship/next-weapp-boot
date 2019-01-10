@@ -3,9 +3,9 @@
 
 ## usage:
 - [nx.App](./docs/app.md)
-- [nx.Page](./docs/app.md)
-- [nx.Component](./docs/app.md)
-- [nx.$](./docs/app.md)
+- [nx.Page](./docs/page.md)
+- [nx.Component](./docs/component.md)
+- [nx.$](./docs/selector.md)
 
 
 # install:

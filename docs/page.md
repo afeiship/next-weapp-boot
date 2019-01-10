@@ -1,43 +1,40 @@
-# page:
+# nx.Page:
+> 对 Page 构造方法的扩展，包含所有的 Page 构造器的功能.
+
+## feature:
+- methods/lifetimes 分开写
 
 ## usage:
-> Observe properies:
-
-- $observe
 ```js
-nx.Component({
-  properties: {
-    className: {
-      type: String,
-      value: ''
-    },
-    zIndex: {
-      type: Number,
-      value: 100
-    },
-    
+const delay = (t = 0) => new Promise((resolve) => setTimeout(resolve, t));
+
+nx.Page({
+  data: {
+    motto: 'Hello World',
+    gData: null
   },
-  observe: {
-    visible: {
-      get() {
-        return this._value || false;
-      },
-      set(inValue) {
-        this.onVisible(inValue);
-        this._value = inValue;
-      }
+  // 事件处理函数
+  methods: {
+    bindViewTap() {
+      wx.navigateTo({
+        url: '../logs/index'
+      });
+    },
+    test2() {
+      console.log('set global data');
     }
   },
-  methods: {
-    onVisible(inValue) {
-      if (inValue) {
-        this.setData({zIndex: 1000})
-      } else {
-        this.setData({zIndex: -1})
-      }
-      console.log('visible changed', inValue);
+  lifetimes: {
+    async load() {
+      console.log('page start load');
+      await delay()
+      console.log('wait 1s, page onload?');
+      // 调用应用实例的方法获取全局数据
+      nx.$app.getUserInfo((userInfo) => {
+        // 更新数据
+        this.setData({ userInfo });
+      });
     }
   }
 });
-
 ```
