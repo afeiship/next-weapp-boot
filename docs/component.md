@@ -63,3 +63,7 @@ nx.Component({
   mixins:['mixin1','mixin2', require('next-json')]
 });
 ```
+
+## computed:
+> 未仔细测试，可以使用看下有没有坑
+- https://github.com/wechat-miniprogram/computed

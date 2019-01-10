@@ -7,7 +7,6 @@
 - [nx.Component](./docs/component.md)
 - [nx.Behavior](./docs/behavior.md)
 - [nx.$](./docs/selector.md)
-- [weapp buggy](./docs/buggy.md)
 
 # install:
 ```js
