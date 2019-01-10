@@ -10,6 +10,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "miniprogram-computed": "0.0.6",
     "next-capitalize": "github:afeiship/next-capitalize",
     "next-map-key": "github:afeiship/next-map-key",
     "next-weapp-redux-base": "github:afeiship/next-weapp-redux-base",
