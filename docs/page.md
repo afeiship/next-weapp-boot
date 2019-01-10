@@ -5,12 +5,15 @@
 - `methods/lifetimes` 分开写
 - `methods/lifetimes` 方法会 `merge`，所以，并不能重名
 - `lifetimes` 里的方法，不需要加 `on`
+- `mixins` 同 nx.Component 用法
+- `nx.$memory/$local` 同 nx.Component 用法
 
 ## usage:
 ```js
 const delay = (t = 0) => new Promise((resolve) => setTimeout(resolve, t));
 
 nx.Page({
+  mixins:['mixins1'],
   data: {
     motto: 'Hello World',
     gData: null

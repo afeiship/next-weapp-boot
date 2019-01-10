@@ -5,10 +5,12 @@
 - 扩展 behavior, 增加 redux/ref 特性的支持
 - Observe的支持，小程序已经支持，不推荐使用
 - Mixins 支持，
+- 自小程序基础库版本 2.2.3 起，组件的的生命周期也可以在 lifetimes 字段内进行声明（这是推荐的方式，其优先级最高）。
 
 ## observe:
 > 小程序已经扩展，不推荐继续使用
 - https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/component.html
+- https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/lifetimes.html
 
 ~~~
 组件的对外属性，是属性名到属性设置的映射表，属性设置中可包含三个字段， type 表示属性类型、 value 表示属性初始值、 observer 表示属性值被更改时的响应函数
