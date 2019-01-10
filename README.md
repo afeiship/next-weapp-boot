@@ -1,7 +1,7 @@
 # next-weapp-boot
 > Weapp enhanced boot
 
-## useage:
+## usage:
 - [nx.App](./docs/app.md)
 - [nx.Page](./docs/app.md)
 - [nx.Component](./docs/app.md)
