@@ -8,6 +8,10 @@
 - [nx.Behavior](./docs/behavior.md)
 - [nx.$](./docs/selector.md)
 
+## todos:
+- [ ] todo: add className behavior for nx.Component
+- [ ] todo: add lifetimes/methods for nx.App
+
 # install:
 ```js
 import 'next-weapp-boot';
