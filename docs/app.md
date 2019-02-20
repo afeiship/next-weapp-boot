@@ -56,3 +56,16 @@ nx.App({
   }
 });
 ```
+
+
+## 事件：event-mitt:
+```js
+// attach:
+var res = nx.$app.on('evt',()=>{})
+
+// emit event:
+nx.$app.emit('evt')
+
+// destroy:
+res.destroy();
+```
