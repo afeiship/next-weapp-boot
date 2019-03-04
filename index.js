@@ -3,5 +3,6 @@ module.exports = {
     Page: require('./lib/page'),
     Component: require('./lib/component'),
     Behavior: require('./lib/behavior'),
-    $: require('./lib/selector')
+    $ref: require('./lib/ref'),
+    $service: require('./lib/service'),
 };
