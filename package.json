@@ -1,6 +1,6 @@
 {
   "name": "next-weapp-boot",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Weapp enhanced boot",
   "homepage": "https://github.com/afeiship/next-weapp-boot",
   "author": {
@@ -17,5 +17,8 @@
     "next-weapp-redux-base": "github:afeiship/next-weapp-redux-base",
     "next-weapp-store": "github:afeiship/next-weapp-store",
     "redux": "3.7.2"
+  },
+  "devDependencies": {
+    "rake-git": "github:afeiship/rake-git"
   }
 }
