@@ -5,7 +5,7 @@
 原因出在以下几个地方：
 ~~~
 
-1. 每个组件/page 都会 `subscribe redux` 的 `store` 即全局的 `store`
+1. `component/page` 都会 `subscribe redux` 的 `store` 即全局的 `store`
 2. 那么这样就意味着，随着页面组件的增多， `store` 里的 `liseners` 会越来越多
 3. 越来越多的 `listeners` 多，会导致频繁的调用小程序端的 `setData` ，这个本来就有性能问题(因为其实本质是走的 `webview-bridge` 这个思路)
 4. `webview-bridge` 会涉及多端，多层API调用，性能必然不好
