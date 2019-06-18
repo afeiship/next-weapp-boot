@@ -76,6 +76,16 @@
 
 ## 其它优化方案
 - 把动态、静态数据分开(static/data)，静态的可以针对比较大的数据，动态数据，是必须 动态设置的情况
+- 其它优化方案：
+  ```js
+  var weappSetData = require('next-weapp-set-data');
+  // async setData:
+  // 适合于数据量不大，多次设置的场景
+  weappSetData(inContext, {
+    memory: this.memory,
+    local: this.local
+  });
+  ```
 
 ## resources
 - http://www.fly63.com/article/detial/1397?type=2
