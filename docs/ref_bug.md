@@ -87,3 +87,10 @@ var methods = {
     });
   }
 ```
+
+
+## resources
+- https://developers.weixin.qq.com/community/develop/doc/0002e8f689cde03ff7d7909ba51800?highLine=Framework%2520inner%2520error%2520
+- https://www.jianshu.com/p/bf06e3fde97f
+- https://www.jianshu.com/p/c95bdffe80bc
+- http://www.mamicode.com/info-detail-2161012.html
