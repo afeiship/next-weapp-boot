@@ -90,7 +90,18 @@ var methods = {
 
 
 ## resources
-- https://developers.weixin.qq.com/community/develop/doc/0002e8f689cde03ff7d7909ba51800?highLine=Framework%2520inner%2520error%2520
+- https://developers.weixin.qq.com/community/develop/doc/0002e8f689cde03ff7d7909ba51800
 - https://www.jianshu.com/p/bf06e3fde97f
 - https://www.jianshu.com/p/c95bdffe80bc
 - http://www.mamicode.com/info-detail-2161012.html
+
+
+---
+# vdSyncBatch max size 问题分析
+> 仔细分析发现，上面的问题，确实会有问题，但并不是问题的根源。
+> 因为发现，几乎每个实例都会新创建，所以，componentsMap 会越来越大。
+
+- 这次的问题，有点类似于小程序的某些操作，会出现内存峰值的情况
+- `switchTab` ，会销毁掉 `detail` 页，然后加载首页内容
+- 首页内容也存在多层嵌套，渲染次数会比较多
+- 直接走 `setData` 的逻辑也特别的多
