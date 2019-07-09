@@ -63,6 +63,7 @@ var methods = {
 7. 组件没有被释放/page 没有被释放
 8. 找到里面的 map，map上有的数据一直存在内存里，占用内存
 9. 奇怪是为什么在 iphoneX 这样的机型上比较明显？？？
+10. 总结： wx.navigateTo、wx.reLaunch 会销毁其它页面，跳到 tab 页，这个API没有问题，问题是出在自己的程序上
 
 ```js
 // pagination.js
